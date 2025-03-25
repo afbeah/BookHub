@@ -1,6 +1,6 @@
 package biblioteca;
 
-class Livro implements Detalhavel{
+public class Livro implements Detalhavel{
     String titulo;
     String autor;
     int anoPublicacao;
