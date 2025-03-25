@@ -1,3 +1,7 @@
+package app;
+
+import biblioteca.Livro;
+
 public class Main {
     public static void main(String[] args){
         Livro livro1 = new Livro("Pink Lemonade", "G.B. Baldassari", 2025 );
