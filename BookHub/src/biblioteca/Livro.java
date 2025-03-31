@@ -4,6 +4,7 @@ public class Livro implements Detalhavel{
     private String titulo;
     private String autor;
     private int anoPublicacao;
+    private String editora;
     private Resenha resenha;
 
     public void adicionarResenha(String texto, double avaliacao){
@@ -11,10 +12,11 @@ public class Livro implements Detalhavel{
     }
 
     //Construtor
-    public Livro(String titulo, String autor, int anoPublicacao){
+    public Livro(String titulo, String autor, int anoPublicacao, String editora){
         this.titulo = titulo;
         this.autor = autor;
         this.anoPublicacao = anoPublicacao;
+        this.editora = editora;
     }
 
     @Override
@@ -22,6 +24,7 @@ public class Livro implements Detalhavel{
         System.out.println("Titulo: " + titulo + ".");
         System.out.println("Autor: " + autor + ".");
         System.out.println("Ano de Publicação: " + anoPublicacao + ".");
+        System.out.println("Editora: " + editora + ".");
 
         if(resenha != null){
             resenha.exibirResenha();
