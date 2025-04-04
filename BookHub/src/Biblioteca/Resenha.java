@@ -1,6 +1,8 @@
-package biblioteca;
+package Biblioteca;
 
-public class Resenha{
+import Interfaces.Avaliacao;
+
+public class Resenha implements Avaliacao {
     private String texto;
     private double avaliacao;
 
@@ -12,5 +14,10 @@ public class Resenha{
     public void exibirResenha(){
         System.out.println("Resenha: " + texto);
         System.out.println("Avaliação: " + avaliacao + " estrelas.");
+    }
+
+    @Override
+    public void exibirAvaliavel() {
+        exibirResenha();
     }
 }

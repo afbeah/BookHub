@@ -1,6 +1,8 @@
-package biblioteca;
+package Biblioteca;
 
-public class Livro implements Detalhavel{
+import Interfaces.Detalhavel;
+
+public abstract class Publicacao implements Detalhavel {
     private String titulo;
     private String autor;
     private int anoPublicacao;
@@ -12,7 +14,7 @@ public class Livro implements Detalhavel{
     }
 
     //Construtor
-    public Livro(String titulo, String autor, int anoPublicacao, String editora){
+    public Publicacao(String titulo, String autor, int anoPublicacao, String editora){
         this.titulo = titulo;
         this.autor = autor;
         this.anoPublicacao = anoPublicacao;
@@ -67,7 +69,7 @@ public class Livro implements Detalhavel{
     }
 
     public void setEditora(String editora){
-        if(editora != null && editora.isEmpty()){
+        if(editora != null && !editora.isEmpty()){
             this.editora = editora;
         } else {
             System.out.println("Editora Inválida!");
