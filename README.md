@@ -37,7 +37,9 @@ O projeto foi refatorado para seguir uma arquitetura mais organizada e modular:
     * Alternativamente, você pode compilar e executar a partir da linha de comando usando `javac` e `java`.
 
 ## Contribuição
-Este projeto é de uso pessoal e não está aberto para contribuições externas no momento. No entanto, sugestões e melhorias são bem-vindas. Sinta-se à vontade para abrir uma issue ou enviar um pull request com suas propostas.
+Este projeto é de uso pessoal e não está aberto para contribuições externas no momento. 
+No entanto, sugestões e melhorias são bem-vindas. 
+Sinta-se à vontade para abrir uma issue ou enviar um pull request com suas propostas.
 
 ## Licença 
 
