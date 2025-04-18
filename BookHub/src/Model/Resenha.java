@@ -1,4 +1,4 @@
-package Biblioteca;
+package Model;
 
 import Interfaces.Avaliacao;
 

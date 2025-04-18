@@ -1,4 +1,4 @@
-package Biblioteca;
+package Model;
 
 public class Livros extends Publicacao {
     private Resenha resenha;
