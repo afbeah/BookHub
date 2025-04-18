@@ -17,6 +17,13 @@ A BookHub API é uma aplicação desenvolvida em Java para uso pessoal, com o ob
 * **Edição:** Modifique informações de registros existentes, como título, autor, número de páginas, etc.
 * **Exclusão:** Remova registros que você não precisa mais.
 
+## Estrutura do Projeto
+O projeto foi refatorado para seguir uma arquitetura mais organizada e modular:
+
+* **Pacote `Model`:** Contém as classes que representam os dados da aplicação `Livro`, `Gibi` e `Fanfic`.
+* **Pacote `Service`:** Contém a lógica de negócios, com classes responsáveis por manipular os dados dos livros, gibis e fanfics.
+* **Pacote `App`:** Contém a classe principal (Main) que interage com o usuário e utiliza os serviços para realizar as operações.
+
 ## Configuração e Execução
 
 1.  **Pré-requisitos:**
@@ -29,27 +36,9 @@ A BookHub API é uma aplicação desenvolvida em Java para uso pessoal, com o ob
     * Utilize seu IDE para compilar e executar a aplicação Java.
     * Alternativamente, você pode compilar e executar a partir da linha de comando usando `javac` e `java`.
 
-## Endpoints da API
-
-* **Inserir Livro/Gibi/Fic:**
-    * `POST /books`
-    * Corpo da requisição: JSON com os dados do livro, gibi ou fic.
-* **Editar Livro/Gibi/Fic:**
-    * `PUT /books/{id}`
-    * Corpo da requisição: JSON com os dados atualizados.
-* **Excluir Livro/Gibi/Fic:**
-    * `DELETE /books/{id}`
-* **Listar Livros/Gibis/Fics:**
-    * `GET /books`
-
-## Exemplos de Uso
-
-### Inserir 
-
-### Editar 
-
-### Deletar 
-
 ## Contribuição
+Este projeto é de uso pessoal e não está aberto para contribuições externas no momento. No entanto, sugestões e melhorias são bem-vindas. Sinta-se à vontade para abrir uma issue ou enviar um pull request com suas propostas.
 
 ## Licença 
+
+Este projeto é de uso pessoal e não possui uma licença formal. O código é disponibilizado "como está", sem garantias de qualquer tipo.
